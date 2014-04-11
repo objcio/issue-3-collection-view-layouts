@@ -10,12 +10,6 @@
 #import "CalendarDataSource.h"
 #import "HeaderView.h"
 
-@interface CalendarViewController ()
-
-@property (strong, nonatomic) IBOutlet CalendarDataSource *calendarDataSource;
-
-@end
-
 @implementation CalendarViewController
 
 - (void)viewDidLoad
