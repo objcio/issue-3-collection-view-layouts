@@ -120,6 +120,7 @@ static const CGFloat HourHeaderWidth = 100;
 - (NSInteger)hourIndexFromYCoordinate:(CGFloat)yPosition
 {
     NSInteger hourIndex = MAX((NSInteger)0, (NSInteger)((yPosition - DayHeaderHeight) / HeightPerHour));
+    hourIndex = MIN(hourIndex, (NSInteger)HoursPerDay-1);
     return hourIndex;
 }
 
