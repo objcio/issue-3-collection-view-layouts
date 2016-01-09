@@ -24,7 +24,7 @@
     // Prepare some example events
     // In a real app, these should be retrieved from the calendar data store (EventKit.framework)
     // We use a very simple data format for our events. In a real calendar app, event times should be
-    // represented with NSDate objects and correct calendrical date calculcations should be used.
+    // represented with NSDate objects and correct calendrical date calculations should be used.
     [self generateSampleData];
 }
 
