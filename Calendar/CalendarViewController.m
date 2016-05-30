@@ -34,9 +34,9 @@
     };
     dataSource.configureHeaderViewBlock = ^(HeaderView *headerView, NSString *kind, NSIndexPath *indexPath) {
         if ([kind isEqualToString:@"DayHeaderView"]) {
-            headerView.titleLabel.text = [NSString stringWithFormat:@"Day %d", indexPath.item + 1];
+            headerView.titleLabel.text = [NSString stringWithFormat:@"Day %ld", (long)indexPath.item + 1];
         } else if ([kind isEqualToString:@"HourHeaderView"]) {
-            headerView.titleLabel.text = [NSString stringWithFormat:@"%2d:00", indexPath.item + 1];
+            headerView.titleLabel.text = [NSString stringWithFormat:@"%2ld:00", (long)indexPath.item + 1];
         }
     };
 }
