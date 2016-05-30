@@ -46,7 +46,7 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"%@: Day %d - Hour %d - Duration %d", self.title, self.day, self.startHour, self.durationInHours];
+    return [NSString stringWithFormat:@"%@: Day %ld - Hour %ld - Duration %ld", self.title, (long)self.day, (long)self.startHour, (long)self.durationInHours];
 }
 
 @end
